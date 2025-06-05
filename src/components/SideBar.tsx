@@ -1,0 +1,21 @@
+import logo from '../assets/logo.png';
+
+function SideBar() {
+  return (
+    <>
+      <aside className="flex h-screen w-64 bg-blue-300 text-black flex flex-col">
+        <div>
+          <img src={logo} alt="Logo" />
+        </div>
+        <nav className="flex flex-col p-4 space-y-2">
+          <a href="/dashboard" className="px-3 py-2 rounded hover:bg-gray-100">Dashboard</a>
+          <a href="/transactions" className="px-3 py-2 rounded hover:bg-gray-100">Transactions</a>
+          <a href="/budgets" className="px-3 py-2 rounded hover:bg-gray-100">Budgets</a>
+          <a href="/planned-expenses" className="px-3 py-2 rounded hover:bg-gray-100">Planned expenses</a>
+        </nav>
+      </aside>
+    </>
+  );
+}
+
+export default SideBar;
