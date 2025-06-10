@@ -1,9 +1,30 @@
+import DefaultCell from "../components/Utilities components/DefaultCell";
+import { DefaultRow } from "../components/Utilities components/DefaultRow";
+import { DefaultView } from "../components/Utilities components/DefaultView";
+
 function Dashboard() {
   return (
-    <div className="h-full w-full bg-blue-200 p-4">
-      <h1 className="text-2xl font-bold text-blue-800">Dashboard</h1>
-      <p>Questa è la dashboard.</p>
-    </div>
+    <DefaultView>
+      <DefaultRow>
+        <DefaultCell>
+          <div className="w-50 h-50 bg-green-200"></div>
+        </DefaultCell>
+
+        <DefaultCell>
+          <div className="w-100 h-50 bg-green-200"></div>
+        </DefaultCell>
+      </DefaultRow>
+
+      <DefaultRow>
+        <DefaultCell>
+          <div className="w-50 h-50 bg-green-200"></div>
+        </DefaultCell>
+
+        <DefaultCell>
+          <div className="w-100 h-50 bg-green-200"></div>
+        </DefaultCell>
+      </DefaultRow>
+    </DefaultView>
   );
 }
 

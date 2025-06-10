@@ -5,7 +5,7 @@ export function Layout() {
   return (
     <div className="flex">
       <SideBar />
-      <div className="flex-grow p-4">
+      <div className="flex-grow px-4">
         <Outlet />
       </div>
     </div>
